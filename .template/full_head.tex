@@ -1,0 +1,21 @@
+\documentclass[a4paper,11pt]{book}
+\input{.template/usepackage}
+
+\newcommand{\cours}[1]{
+  \input{#1/def}
+  \part[\lessonabr\ -- \lessonname]{
+  \lessonabr\\
+  \lessonname\\\ \\
+  \Large Auteur~: \noteauthor\\
+  Date~: \lessonfrom\ --- \lessonto
+  }
+  \input{#1/main}
+}
+
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
